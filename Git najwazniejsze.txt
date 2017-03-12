@@ -1,0 +1,39 @@
+
+
+
+
+dodawanie repozytorium na Github lub eksportowanie lokalnego repozytorium na github
+
+
+1. Na Githubithub tworzymy puste repozytorium
+
+a) mo¿na zainicjalizowaæ plik readme i nastêpnie sklonowaæ to repozytorium do lokalnego katalogu w komputerze
+
+b) je¿eli nie zainicjalizujesz ¿adne pliku, to mo¿na zaimportowaæ repozytorium z komputera
+github podpowiada jak wys³aæ lokalne pliki z komputera do repozytorium:
+
+Quick setup — if you’ve done this kind of thing before
+ Set up in Desktop	'to jest przycisk na stronie, ale nie testowa³em
+
+ or	
+ skopiowaæ link i...
+ HTTPS https://github.com/GrzegorzStepien/test1.git  'adres do skopiowania, ¿eby dodaæ póŸniej w odpowiednim poleceniu
+ SSH git@github.com:GrzegorzStepien/test1.git 'tego typu adresu nie testowa³em...
+We recommend every repository include a README, LICENSE, and .gitignore.
+
+…i create a new repository on the command line
+echo "# test1" >> README.md  'dodanie tego pliku readme nie jest konieczne...
+git init
+git add README.md 
+git commit -m "first commit"  'musimy mieæ jakiegoœ commita, ¿eby mo¿na by³o cokolwiek wys³aæ do repozytorium na serwerze
+git remote add origin https://github.com/GrzegorzStepien/test1.git 'tu wstawiæ skopiowany link
+git push -u origin master
+
+…lub w ten sposób: push an existing repository from the command line
+git remote add origin https://github.com/GrzegorzStepien/test1.git
+git push -u origin master
+
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+'tu pewnie mo¿na wybraæ jakieœ istniej¹ce repozytorium, ale nie testowa³em tego
+
