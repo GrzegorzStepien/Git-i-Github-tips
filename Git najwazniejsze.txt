@@ -1,6 +1,6 @@
 
 
-
+jak rozwi¹zaæ problem z polskimi znakami???
 
 dodawanie repozytorium na Github lub eksportowanie lokalnego repozytorium na github
 
